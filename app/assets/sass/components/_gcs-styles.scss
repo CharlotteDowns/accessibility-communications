@@ -1,0 +1,121 @@
+/********** Styles to mimic Government Communication Service header *********/
+
+/* HEADER */
+
+.gcs-main-menu {
+  background-color: #ffffff;
+}
+.gcs-header {
+    border: 0;
+    font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+    @include govuk-media-query($from: tablet) {
+      border-bottom: 1.5em solid #0ABCCA;
+    }
+}
+.gcs-header__container {
+  border: 0;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  margin-bottom: 0;
+  @include govuk-media-query($from: tablet) {
+    padding-bottom: 8px;
+  }
+}
+
+.gcs-header__logo {
+  @include govuk-media-query($from: tablet) {
+    width: 60%;
+    margin-bottom: 0;
+  }
+}
+
+.gcs-header__logo .govuk-header__link--homepage {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+  font-weight:400;
+  border-left: 2px solid #ffffff;
+  padding-left: 8px;
+  font-size: 22px;
+}
+
+.gcs-header__link:link, .gcs-header__link:visited {
+  color: #ffffff;
+}
+
+.gcs-header__logo .govuk-header__link--homepage:hover, .gcs-header__logo .govuk-header__link--homepage:active {
+
+}
+
+.gcs-logo {
+  max-width: 300px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  height: auto;
+  @include govuk-media-query($from: tablet) {
+    max-width: 420px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: auto;
+  }
+}
+
+.gcs-logo .cls-1 {
+  fill: #fff;
+}
+
+.gcs_logotype-text{
+  line-height:33px;
+}
+
+.gcs-header__navigation {
+  margin-bottom: 0;
+}
+
+.gcs-header__navigation-item {
+  padding: 0;
+}
+
+.gcs-header__navigation-item a {
+  font-size: 1.1875rem;
+  font-size: 1rem;
+  color: #000000;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.gcs-header__navigation-item:last-child {
+  border-bottom: none;
+}
+
+/* BREADCRUMBS */
+
+.gcs-breadcrumbs {
+  background-color: #f4f4f4;
+}
+
+.gcs-breadcrumbs .govuk-header__container {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* FOOTER */
+
+.gcs-footer {
+  background: #f3f2f1;
+}
+
+a.social-link {
+    color: transparent;
+}
+
+.social-icon {
+  width: 26px;
+  height: auto;
+  margin: 0 12px 16px 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .govuk-footer__copyright-logo {
+      background-image: url(/govuk/assets/images/govuk-crest-2x.png);
+  }
+}
